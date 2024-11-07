@@ -82,7 +82,7 @@ def calculator_results():
     operation = request.args.get("operation")
     if operation == "add":
         result = int(operand1) + int(operand2)
-    elif operation == "substract":
+    elif operation == "subtract":
         result = int(operand1) - int(operand2)
     elif operation == "multiply":
         result = int(operand1) * int(operand2)

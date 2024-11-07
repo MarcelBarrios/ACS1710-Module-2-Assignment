@@ -83,7 +83,7 @@ class TestApp(unittest.TestCase):
         self.assertIn('result is: 13', result_page_text)
 
     def test_calculator_subtract(self):
-        res = app.test_client().get('/calculator_results?operand1=6&operand2=7&operation=substract')
+        res = app.test_client().get('/calculator_results?operand1=6&operand2=7&operation=subtract')
         self.assertEqual(res.status_code, 200)
 
         result_page_text = res.get_data(as_text=True)
